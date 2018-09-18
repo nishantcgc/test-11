@@ -1,0 +1,18 @@
+				Cloud Native lab 3 - 12/09/2018
+
+-------------------
+To Log in cloud foundry
+  cf login
+-------------------
+
+--------------------------
+To see the apps in our acount
+git apps
+-------------------------
+
+----------
+git remote -v --remove orgin
+git remote rm origin -- 
+git remote add orgin [url] 
+git push --set-upstream origin master
+------
