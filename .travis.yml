@@ -45,7 +45,7 @@ jobs:
     before_deploy:
     - echo "Deploying $RELEASE_TAG to test1"
     after_success:
-    - cf login -a $CF_API_URL -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s test1 --skip-ssl-validation
+    - cf login -a $CF_API_URL -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s development --skip-ssl-validation
     - scripts/migrate-databases.sh test1 .
     deploy:
       provider: cloudfoundry
